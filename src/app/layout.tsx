@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
+
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Parastare Man',
+  title: 'Parastaram',
 };
 
 export default function RootLayout({
@@ -11,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl">
+    <html dir="rtl" lang="fa">
       <body>{children}</body>
     </html>
   );
