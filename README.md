@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
+  <img src="./src/assets/logo.png" alt="Logo" />
+</div>
 
-## Getting Started
+<h1>
+Parastaram Main Frontend Service
+</h1>
 
-First, run the development server:
+<p>Developed By: <a href="github.com/AliDeWeb">Ali Moradi</a></p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## How to run service
+
+1. Create environments file, for development stage its name must be .env
+
+2. Run backend service
+
+3. Build project and start it
+
+```shell
+  $ npm run build && npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js (App Router)
+- React.js
+- TypeScript
+- Tailwind CSS
+- React Query
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏗️ Project Structure
 
-## Learn More
+```plaintext
+src/
+├── app/              # App Router structure
+├── components/       # Shared UI components
+├── lib/              # Utilities like fetchers, formatters
+├── services/         # API layer (React Query)
+├── types/            # Global TypeScript types & interfaces
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🧩 Contributing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Before creating a pull request:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Make sure your code follows the existing structure and naming conventions.
+2. Run lint and test commands to verify your changes.
+3. Push your changes in a separate branch and open a pull request.
 
-## Deploy on Vercel
+## 📏 Rules
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Please follow these coding conventions and standards when contributing:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Use **camelCase** for variable and function names.
+- Use **kebab-case** for folder names and filenames.
+
+## ✅ Commit Message Rules
+
+This project uses [commitlint](https://github.com/conventional-changelog/commitlint) with Angular-style commit messages. Please follow these rules:
+
+- Each commit message **must not exceed 72 characters**.
+- Use one of the following types:
+  - `build`: Changes that affect the build system or external dependencies
+  - `chore`: Routine tasks or maintenance
+  - `ci`: Continuous integration configuration
+  - `docs`: Documentation-only changes
+  - `feat`: A new feature
+  - `fix`: A bug fix
+  - `perf`: A code change that improves performance
+  - `refactor`: A code change that neither fixes a bug nor adds a feature
+  - `revert`: Reverts a previous commit
+  - `style`: Changes that do not affect the meaning of the code (formatting, etc.)
+  - `test`: Adding or fixing tests
+  - `sample`: Sample or example data/code
+- The subject line should follow one of the approved case styles:
+  - `sentence-case`
+  - `start-case`
+  - `pascal-case`
+  - `upper-case`
+  - `lower-case`
+
+## 📜 License
+
+This project is licensed under the [Custom](/LICENSE) License.
