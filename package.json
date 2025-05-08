@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "format": "npx prettier . --write",
     "cspell": "cspell lint *"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
     "cspell": "^9.0.1",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
+    "prettier": "^3.5.3",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
